@@ -120,7 +120,7 @@ class MegaAppListener(MegaListener):
 
     def cancel_download(self):
         self.is_cancelled = True
-        self.listener.onDownloadError("Download Canceled by user")
+        self.listener.onDownloadError("Download Canceled by user🥺❗️")
 
 
 class AsyncExecutor:
