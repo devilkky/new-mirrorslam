@@ -66,13 +66,13 @@ class AriaDownloadHelper(DownloadHelper):
     def __onDownloadPause(self, api, gid):
         LOGGER.info(f"onDownloadPause: {gid}")
         dl = getDownloadByGid(gid)
-        dl.getListener().onDownloadError('Download stopped by user🥺❗️')
+        dl.getListener().onDownloadError('Download Cancelled by user🥺❗️')
 
     @new_thread
     def __onDownloadStopped(self, api, gid):
         LOGGER.info(f"onDownloadStop: {gid}")
         dl = getDownloadByGid(gid)
-        if dl: dl.getListener().onDownloadError('Dead torrent😂❗️')
+        if dl: dl.getListener().onDownloadError('Dead Torrent😂❗️')
 
     @new_thread
     def __onDownloadError(self, api, gid):
