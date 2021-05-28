@@ -52,7 +52,7 @@ class TelegramDownloadHelper(DownloadHelper):
 
     def __onDownloadProgress(self, current, total):
         if self.__is_cancelled:
-            self.__onDownloadError('Download cancelled by user🥺❗️')
+            self.__onDownloadError('Download Cancelled by user🥺❗️')
             self._bot.stop_transmission()
             return
         with self.__resource_lock:
