@@ -18,7 +18,7 @@ def cloneNode(update,context):
             cc = f'\n\ncc: {uname}'
     if len(args) > 1:
         link = args[1]
-        msg = sendMessage(f"Cloning: <code>{link}</code>",context.bot,update)
+        msg = sendMessage(f"🌈CLONiNG🌈: <code>{link}</code>",context.bot,update)
         gd = GoogleDriveHelper()
         result, button = gd.clone(link)
         deleteMessage(context.bot,msg)
@@ -27,7 +27,7 @@ def cloneNode(update,context):
         else:
             sendMarkup(result + cc,context.bot,update,button)
     else:
-        sendMessage("Provide G-Drive Shareable Link to Clone.",context.bot,update)
+        sendMessage("Provide G-Drive Shareable Link to Clone😏",context.bot,update)
 
 clone_handler = CommandHandler(BotCommands.CloneCommand,cloneNode,filters=CustomFilters.authorized_chat | CustomFilters.authorized_user)
 dispatcher.add_handler(clone_handler)
