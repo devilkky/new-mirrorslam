@@ -98,7 +98,7 @@ class GoogleDriveHelper:
                                      resumable=False)
         file_metadata = {
             'name': file_name,
-            'description': 'Uploaded using Slam Mirror Bot',
+            'description': 'Uploaded using ANonYmoUSFriEND Mirror Bot',
             'mimeType': mime_type,
         }
         if parent_id is not None:
@@ -109,16 +109,16 @@ class GoogleDriveHelper:
         try:
             file_id = self.getIdFromUrl(link)
         except (KeyError,IndexError):
-            msg = "Google drive ID could not be found in the provided link"
+            msg = "Google drive ID could not be found in the provided link🙄"
             return msg
         msg = ''
         try:
             res = self.__service.files().delete(fileId=file_id, supportsTeamDrives=IS_TEAM_DRIVE).execute()
-            msg = "Successfully deleted"
+            msg = "Successfully deleted😌"
         except HttpError as err:
             LOGGER.error(str(err))
             if "File not found" in str(err):
-                msg = "No such file exist"
+                msg = "No such file exist🤔"
             else:
                 msg = "Something went wrong check log"
         finally:
@@ -152,7 +152,7 @@ class GoogleDriveHelper:
         # File body description
         file_metadata = {
             'name': file_name,
-            'description': 'Uploaded by Slam Mirror Bot',
+            'description': 'Uploaded by ANonYmoUSFriEND Mirror Bot',
             'mimeType': mime_type,
         }
         if parent_id is not None:
@@ -311,7 +311,7 @@ class GoogleDriveHelper:
         try:
             file_id = self.getIdFromUrl(link)
         except (KeyError,IndexError):
-            msg = "Google drive ID could not be found in the provided link"
+            msg = "Google drive ID could not be found in the provided link🙄"
             return msg
         msg = ""
         LOGGER.info(f"File ID: {file_id}")
