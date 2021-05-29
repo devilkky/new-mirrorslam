@@ -42,7 +42,7 @@ def stats(update, context):
             f'<b>├⏰BotUptime:</b> {currentTime}\n' \
             f'<b>╰⏱StartTime:</b> {current}\n\n' \
             f'<b>╭─🧰Total Disk Space:</b> {total}\n' \
-            f'<b>├─📮Used:</b> {used}  ' \
+            f'<b>├─📮Used:</b> {used}\n' \
             f'<b>╰─🏮Free:</b> {free}\n\n' \
             f'╭───┃🕹 DATA USAGE 🕹┃\n<b>├─🔺Upload:</b> {sent}\n' \
             f'<b>├─🔻Download:</b> {recv}\n' \
