@@ -9,7 +9,7 @@ from telegram.ext import Filters, run_async, CommandHandler
 @run_async
 def speedtest(update, context):
     message = update.effective_message
-    ed_msg = message.reply_text("🏃‍♂💨Running Speed Test . . . . . . ")
+    ed_msg = message.reply_text("🏃‍♂💨Running Speed Test . . . . . . .  ")
     test = Speedtest()
     test.get_best_server()
     test.download()
