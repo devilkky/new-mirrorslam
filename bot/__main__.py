@@ -57,19 +57,19 @@ def stats(update, context):
 @run_async
 def start(update, context):
     start_string = f'''
-This bot can mirror all your links to Google drive!
-Type /{BotCommands.HelpCommand} to get a list of available commands
+This bot can mirror all your links to Google drive 🔰
+Type /{BotCommands.HelpCommand} to get a list of available commands😌
 '''
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Repo", "https://github.com/breakdowns/slam-mirrorbot")
-    buttons.buildbutton("Support Group", "https://t.me/SlamMirrorSupport")
+    buttons.buildbutton("🧰 OWNER 🧰", "https://t.me/ANonYmoUS_FriEND")
+    buttons.buildbutton("🧪 REPO 🧪", "https://t.me/ANonYmoUS_FriEND")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     update.effective_message.reply_photo(IMAGE_URL, start_string, parse_mode=ParseMode.MARKDOWN, reply_markup=reply_markup)
 
 
 @run_async
 def restart(update, context):
-    restart_message = sendMessage("Restarting, Please wait!", context.bot, update)
+    restart_message = sendMessage("🤯Restarting......⚠️, Please wait🧤", context.bot, update)
     LOGGER.info(f'Restarting the Bot...')
     # Save restart message object in order to reply to it after restarting
     fs_utils.clean_all()
@@ -81,7 +81,7 @@ def restart(update, context):
 @run_async
 def ping(update, context):
     start_time = int(round(time.time() * 1000))
-    reply = sendMessage("Starting Ping", context.bot, update)
+    reply = sendMessage("Starting Ping...🖲️", context.bot, update)
     end_time = int(round(time.time() * 1000))
     editMessage(f'{end_time - start_time} ms', reply)
 
@@ -210,7 +210,7 @@ def main():
     if path.exists('restart.pickle'):
         with open('restart.pickle', 'rb') as status:
             restart_message = pickle.load(status)
-        restart_message.edit_text("Restarted Successfully!")
+        restart_message.edit_text("😇Restarted Successfully🤙")
         LOGGER.info('Restarted Successfully!')
         remove('restart.pickle')
     bot.set_my_commands(botcmds)
