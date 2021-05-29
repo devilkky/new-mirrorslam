@@ -69,7 +69,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands😌
 
 @run_async
 def restart(update, context):
-    restart_message = sendMessage("🤯Restarting......⚠️, Please wait🧤", context.bot, update)
+    restart_message = sendMessage("🤯Restarting........⚠️ Please wait🧤", context.bot, update)
     LOGGER.info(f'Restarting the Bot...')
     # Save restart message object in order to reply to it after restarting
     fs_utils.clean_all()
@@ -81,7 +81,7 @@ def restart(update, context):
 @run_async
 def ping(update, context):
     start_time = int(round(time.time() * 1000))
-    reply = sendMessage("Starting Ping...🖲️", context.bot, update)
+    reply = sendMessage("Starting Ping....🖲️", context.bot, update)
     end_time = int(round(time.time() * 1000))
     editMessage(f'{end_time - start_time} ms🖲️', reply)
 
