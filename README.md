@@ -10,9 +10,9 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/breakdowns/slam-mirrorbot?style=flat)
 ![GitHub repo size](https://img.shields.io/github/repo-size/breakdowns/slam-mirrorbot?color=red)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/breakdowns/slam-mirrorbot)
-[![Slam Mirror Support](https://img.shields.io/badge/ANonYmoUSFriEND%20mirror%20bot-support%20-blue)](https://t.me/ANonYmoUS_FriEND)
+[![ANonYmoUS Mirror Support](https://img.shields.io/badge/ANonYmoUSFriEND%20mirror%20bot-support%20-blue)](https://t.me/ANonYmoUS_FriEND)
 
-**Slam Mirror Bot** is a Telegram Bot writen in Python for mirroring files on the Internet to our beloved Google Drive.
+**ANonYmoUSFriEND Mirror Bot** is a Telegram Bot writen in Python for mirroring files on the Internet to our beloved Google Drive.
 
 # Features supported:
 
