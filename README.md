@@ -1,6 +1,6 @@
 [![ANonYmoUSFriEND](https://telegra.ph/file/1bb716503a7bf64ffcebb.jpg)](https://t.me/ANonYmoUS_FriEND)
 
-# Slam Mirror Bot
+# ANonYmoUS Mirror Bot
 ![GitHub Repo stars](https://img.shields.io/github/stars/breakdowns/slam-mirrorbot?color=blue&style=flat)
 ![GitHub forks](https://img.shields.io/github/forks/breakdowns/slam-mirrorbot?color=green&style=flat)
 ![GitHub issues](https://img.shields.io/github/issues/breakdowns/slam-mirrorbot)
